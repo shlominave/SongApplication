@@ -32,7 +32,7 @@ YourAdapter ad;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getdata();
-        ad=new YourAdapter(this,R.layout.countrylayout,countrylist);
+        ad=new YourAdapter(this,R.layout.country_layout,countrylist);
         ListView1=(ListView)findViewById(R.id.LV1);
 
         ListView1.setAdapter(ad);
