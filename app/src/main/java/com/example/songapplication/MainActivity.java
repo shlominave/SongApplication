@@ -22,7 +22,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 ListView ListView1;
-//ArrayList<Song>song=new ArrayList<Song>();
+
 ArrayList<Country> countrylist =new  ArrayList<Country>();
 YourAdapter ad;
 
@@ -31,7 +31,7 @@ YourAdapter ad;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getcountrydata();
+        getdata();
         ad=new YourAdapter(this,R.layout.countrylayout,countrylist);
         ListView1=(ListView)findViewById(R.id.LV1);
 
@@ -50,7 +50,7 @@ YourAdapter ad;
             Toast.makeText(MainActivity.this, countrylist.get(position).toString(), Toast.LENGTH_SHORT).show();
         }
     };
-    public void getcountrydata()
+    public void getdata()
     {
         Country c=new Country("serbia","serbia.png",20000000);
       countrylist.add(c);
@@ -88,7 +88,7 @@ YourAdapter ad;
          Country c=this.objects.get(position);
             TextView countrynametv =findViewById(R.id.countrynametv);
             TextView populationtv =findViewById(R.id.populationtv);
-            ImageView iv=findViewById(R.id.imageView1);
+       ImageView iv=findViewById(R.id.imageView1);
             countrynametv.setText(c.getCountryname());
             populationtv.setText(c.getPopulation()+"");
             return v;
