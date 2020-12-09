@@ -15,32 +15,22 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/tvsongname"
-        android:layout_width="107dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="64dp"
+        android:id="@+id/countrynametv"
+        android:layout_width="129dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="44dp"
         android:layout_marginTop="32dp"
-        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/imageView1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="106dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/tvsongname"
-        app:layout_constraintTop_toBottomOf="@+id/tvsongname" />
-
-    <TextView
-        android:id="@+id/tvsingername"
-        android:layout_width="100dp"
-        android:layout_height="45dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        android:id="@+id/populationtv"
+        android:layout_width="137dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/countrynametv"
+        app:layout_constraintTop_toBottomOf="@+id/countrynametv" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
